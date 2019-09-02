@@ -1,6 +1,6 @@
 export default function getData() {
   const goodsWrapper = document.querySelector('.goods');
-  return fetch('../db/db.json')
+  return fetch('http://my-json-server.typicode.com/Pollacco/JSON/db')
   .then((response) => {
     if (response.ok) {
       return response.json();
